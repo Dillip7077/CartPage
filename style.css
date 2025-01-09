@@ -234,11 +234,11 @@
 .cart-section {
   display: flex;
   justify-content: space-between;
-  padding: 40px 50px;
+  padding: 20px 30px;
 }
 
 .cart-items {
-  flex: 0 0 68%;
+  flex: 0 0 60%;
 }
 
 .cart-items-table {

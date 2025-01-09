@@ -141,3 +141,17 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchCartData();
   }
 });
+document.addEventListener("DOMContentLoaded", function() {
+    function toggleMenu() {
+      console.log("Menu toggled!");
+      const menu = document.querySelector('.nav-part-1 ul');
+      menu.classList.toggle('show');
+    }
+  
+    // Add click event listener for burger menu
+    const burgerMenu = document.querySelector('.burger-menu');
+    if (burgerMenu) {
+      burgerMenu.addEventListener('click', toggleMenu);
+    }
+  });
+  
