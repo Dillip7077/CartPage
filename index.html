@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Marmeto cart</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="nav-part-1">
+          <h1 class="nav1">
+            <img
+              class="logo"
+              src="/images/Meubel House_Logos-05.svg"
+              alt="logo"
+            />
+            <span title="Marmeto">Marmeto</span>
+          </h1>
+          <ul>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="nav-part-2">
+          <img src="/images/Vector.svg" alt="icon" />
+          <img src="/images/Vector (1).svg" alt="icon" />
+          <img src="/images/Vector (2).svg" alt="icon" />
+          <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+          <!-- Mobile burger menu -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section Below Main -->
+    <section class="hero">
+      <img src="/images/Meubel House_Logos-05.svg" alt="logo" />
+      <h1 class="Cart">Cart</h1>
+      <span class="bigSpan"
+        >Home
+        <span class="arrow"
+          ><img class="arrowImg" src="./images/arrow.svg" /> Cart</span
+        ></span
+      >
+    </section>
+
+    <section class="cart-section">
+      <div class="cart-items">
+        <table class="cart-items-table">
+          <thead>
+            <tr>
+              <th class="product">Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items-list">
+            <!-- Cart items will be dynamically populated here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="cart-totals">
+        <div class="totals-header">Cart Totals</div>
+        <div class="totals-content">
+          <div class="total-row">
+            <span>Subtotal</span>
+            <span id="subtotal-price"></span>
+          </div>
+          <div class="total-row">
+            <span>Total</span>
+            <span id="total-price"></span>
+          </div>
+          <button class="checkout-btn">Check &nbsp;out</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="loader" style="display: none">Loading...</div>
+    <div id="confirm-modal" style="display: none">
+      <div>
+        <p>Are you sure you want to remove this item?</p>
+        <button id="confirm-remove-btn">Yes, Remove</button>
+        <button id="cancel-remove-btn">Cancel</button>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="footer-list">
+        <li>
+          <img src="/images/trophy 1.svg" alt="Image 1" class="footer-img" />
+          <div class="footer-text">
+            <h3>Title 1</h3>
+            <p>Description for the first item.</p>
+          </div>
+        </li>
+        <li>
+          <img src="/images/guarantee.svg" alt="Image 2" class="footer-img" />
+          <div class="footer-text">
+            <h3>Title 2</h3>
+            <p>Description for the second item.</p>
+          </div>
+        </li>
+        <li>
+          <img src="/images/shipping.svg" alt="Image 3" class="footer-img" />
+          <div class="footer-text">
+            <h3>Title 3</h3>
+            <p>Description for the third item.</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="/images/customer-support.svg"
+            alt="Image 4"
+            class="footer-img"
+          />
+          <div class="footer-text">
+            <h3>Title 4</h3>
+            <p>Description for the fourth item.</p>
+          </div>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
